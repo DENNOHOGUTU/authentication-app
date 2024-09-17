@@ -1,6 +1,8 @@
 "use client"; // Make this a client component
 
 import { useState } from "react";
+import Link from 'next/link';
+
 
 export default function ForgotPassword() {
   const [email, setEmail] = useState("");
