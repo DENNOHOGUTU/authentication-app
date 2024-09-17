@@ -47,8 +47,8 @@ export default function Home() {
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <input
             type="email"
-            name=" email"
-            placeholder=" please enter Email"
+            name="email"
+            placeholder="Email"
             value={formData.email}
             onChange={handleChange}
             required
