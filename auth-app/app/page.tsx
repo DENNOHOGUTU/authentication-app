@@ -47,7 +47,7 @@ export default function Home() {
           <input
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder="Please Enter Your Email"
             value={formData.email}
             onChange={handleChange}
             required
