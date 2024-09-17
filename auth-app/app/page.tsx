@@ -42,25 +42,26 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <main className="w-full max-w-sm p-8 bg-white shadow-md rounded-lg">
-        <h1 className="text-2xl font-bold text-center mb-6">Login</h1>
+      <h1 className="text-2xl font-bold text-center mb-6 text-black">Login</h1>
+
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <input
             type="email"
-            name="email"
-            placeholder="Email"
+            name=" email"
+            placeholder=" please enter Email"
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className=" w-full p-3 mb-4 border border-green-500 rounded-lg focus:outline-none focus:border-green-500"
           />
           <input
             type="password"
             name="password"
-            placeholder="Password"
+            placeholder="please enter password"
             value={formData.password}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className=" w-full p-3 mb-4 border border-green-500 rounded-lg focus:outline-none focus:border-green-500"
           />
           <button
             type="submit"
@@ -69,7 +70,7 @@ export default function Home() {
             Log In
           </button>
         </form>
-        <p className="mt-4 text-center">
+        <p className="mt-4 text-center text-black" >
           Don’t have an account?{" "}
           <Link href="/signup" className="text-blue-500 hover:underline">
             Sign up
